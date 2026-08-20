@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 30px;
+}
+
+p {
+    color: #333;
+    font-size: 18px;
+}
+
+ul {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #1E90FF;
+}
+.info {
+    color: #333;
+    font-size: 18px;
+}
+
+.section-title {
+    color: #1E90FF;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.list {
+    font-size: 18px;
+    line-height: 1.8;
+}
