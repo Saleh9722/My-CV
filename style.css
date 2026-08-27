@@ -34,3 +34,152 @@ hr {
     font-size: 18px;
     line-height: 1.8;
 }
+
+.header {
+    text-align: center;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    color: #1E90FF;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #555;
+    font-size: 18px;
+}
+
+.header nav {
+    margin-top: 20px;
+}
+
+.header nav a {
+    color: #1E90FF;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+.bio {
+    max-width: 600px;
+    margin: 15px auto;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: #1e90ff;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+
+/* Header */
+
+.header {
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.header h1 {
+    color: #1E90FF;
+}
+
+.bio {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+
+/* Flexbox */
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/* Grid */
+
+.cv-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* CV Sections */
+
+.cv-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cv-section h2 {
+    color: #1E90FF;
+}
+
+
+/* Flexbox for lists */
+
+.list {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+/* Footer */
+
+.footer {
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
