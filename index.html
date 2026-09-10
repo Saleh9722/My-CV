@@ -1,16 +1,108 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Guessing Number Game</title>
+    <title>Palestine Explorer: Midterm Challenge</title>
+   
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="top">
 
-    <h2>Guessing Number Game</h2>
+<header>
 
-    <button onclick="startGame()">Start Game</button>
+    <h2>Palestine Explorer</h2>
 
-    <script src="script.js"></script>
+    <svg width="50" height="50" aria-label="Palestine logo">
+        <circle cx="25" cy="25" r="20"></circle>
+        <rect x="15" y="15" width="20" height="20"></rect>
+    </svg>
+
+    <input type="checkbox" id="menu">
+    <label for="menu" class="hamburger">☰</label>
+
+    <nav>
+        <a href="#top">Top</a>
+        <a href="#intro">Introduction</a>
+        <a href="#places">Governorates</a>
+        <a href="#contact">Contact</a>
+        <a href="#bottom">Bottom</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+<section id="intro">
+
+    <h1>Palestine Explorer: Midterm Challenge</h1>
+
+    <p>
+        Palestine has many old cities and historical places.
+    </p>
+
+    <a href="#places">See Places</a>
+
+</section>
+
+
+<section id="places">
+
+    <h2>Palestinian Governorates</h2>
+
+    <div class="cards">
+
+        <article>
+            <div>🏙️</div>
+            <h3>Nablus</h3>
+            <p>A city with old markets.</p>
+        </article>
+
+        <article>
+            <div>⛪</div>
+            <h3>Bethlehem</h3>
+            <p>A famous historical city.</p>
+        </article>
+
+        <article>
+            <div>🌳</div>
+            <h3>Jenin</h3>
+            <p>A city in northern Palestine.</p>
+        </article>
+
+        <article>
+            <div>🌴</div>
+            <h3>Jericho</h3>
+            <p>An old city in Palestine.</p>
+        </article>
+
+        <article>
+            <div>🌿</div>
+            <h3>Tulkarm</h3>
+            <p>A city known for agriculture.</p>
+        </article>
+
+        <article>
+            <div>🌊</div>
+            <h3>Gaza</h3>
+            <p>A city near the sea.</p>
+        </article>
+
+    </div>
+
+</section>
+
+
+
+
+<footer id="bottom">
+
+    <p>© 2026 Palestine Explorer - Saleh Ibrahim</p>
+
+    <a href="#top">Back to Top</a>
+
+</footer>
 
 </body>
 </html>
