@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Palestine Explorer: Midterm Challenge</title>
-   
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,10 +14,12 @@
 
     <h2>Palestine Explorer</h2>
 
-    <svg width="50" height="50" aria-label="Palestine logo">
-        <circle cx="25" cy="25" r="20"></circle>
-        <rect x="15" y="15" width="20" height="20"></rect>
-    </svg>
+  <svg width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" aria-label="Palestine flag logo">
+    <rect width="60" height="13.33" y="0" fill="#000000"></rect>
+    <rect width="60" height="13.33" y="13.33" fill="#ffffff"></rect>
+    <rect width="60" height="13.34" y="26.66" fill="#007a3d"></rect>
+    <path d="M0,0 L22,20 L0,40 Z" fill="#ce1126"></path>
+  </svg>
 
     <input type="checkbox" id="menu">
     <label for="menu" class="hamburger">☰</label>
@@ -32,6 +35,7 @@
 </header>
 
 
+
 <main>
 
 <section id="intro">
@@ -39,7 +43,24 @@
     <h1>Palestine Explorer: Midterm Challenge</h1>
 
     <p>
-        Palestine has many old cities and historical places.
+    Palestine is a historic land located in the heart of the Middle East 
+    known for its deep-rooted history that goes back thousands of years. 
+    It is home to many old cities villages and cultural landmarks that 
+    reflect a rich and diverse heritage.
+    </p>
+
+     <p>
+    Cities such as Nablus Bethlehem Jenin Jericho Tulkarm and Gaza 
+    each carry their own unique character from ancient markets and 
+    religious sites to fertile farmlands and coastal views. Palestine is 
+    also known for its warm hospitality traditional food and vibrant 
+    local culture that has been passed down through generations.
+    </p>
+
+    <p>
+    This website aims to introduce you to some of the most important 
+    Palestinian governorates, giving a glimpse into their history 
+    geography and what makes each one special.
     </p>
 
     <a href="#places">See Places</a>
@@ -53,47 +74,103 @@
 
     <div class="cards">
 
+
         <article>
-            <div>🏙️</div>
+            <img src="imges/nablus.jpg" alt="Nablus city">
             <h3>Nablus</h3>
-            <p>A city with old markets.</p>
+            <p>
+      Nablus is a historic city known for its old markets traditional buildings and local food.
+            </p>
         </article>
 
+
         <article>
-            <div>⛪</div>
+            <img src="imges/Bethlehem.webp" alt="Bethlehem city">
             <h3>Bethlehem</h3>
-            <p>A famous historical city.</p>
+            <p>
+          Bethlehem is a historic city known for its important religious sites,
+            old buildings traditional markets and rich history.
+            </p>
         </article>
 
+
         <article>
-            <div>🌳</div>
+            <img src="imges/sLXZm.jpg" alt="Jenin city">
             <h3>Jenin</h3>
-            <p>A city in northern Palestine.</p>
+               <p>
+              Jenin is a city in northern Palestine known for its green areas
+              farms agriculture and beautiful natural surroundings.
+               </p>
         </article>
 
+
         <article>
-            <div>🌴</div>
+            <img src="imges/Jericho-11345.jpg" alt="Jericho city">
             <h3>Jericho</h3>
-            <p>An old city in Palestine.</p>
+            <p>
+                Jericho is one of the oldest cities in the world It is known for
+                its ancient history warm climate and important historical places.
+            </p>
         </article>
 
+
         <article>
-            <div>🌿</div>
+            <img src="imges/sdasadasd2-1725179409.webp" alt="Tulkarm city">
             <h3>Tulkarm</h3>
-            <p>A city known for agriculture.</p>
+            <p>
+            Tulkarm is a city in northern Palestine known for its farms
+            agriculture traditional markets and local culture.
+            </p>
         </article>
 
+
         <article>
-            <div>🌊</div>
+            <img src="imges/Gaza_City.jpg" alt="Gaza city">
             <h3>Gaza</h3>
-            <p>A city near the sea.</p>
+            <p>
+            Gaza is a coastal city known for its location near the Mediterranean Sea
+            long history local markets and traditional culture.
+            </p>
         </article>
 
     </div>
 
 </section>
 
+<section id="contact">
 
+    <h2>Contact Us</h2>
+
+    <form>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email"
+        pattern="[a-zA-Z0-9._%+-]+@ftu\.ac\.th"
+        required>
+
+        <label for="secret">Secret Word:</label>
+        <input type="password" id="secret"
+        minlength="8"
+        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}"
+        required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</section>
 
 
 <footer id="bottom">
