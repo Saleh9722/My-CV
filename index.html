@@ -1,185 +1,330 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <title>Palestine Explorer: Midterm Challenge</title>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My CV</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="My Curriculum Vitae">
+    <meta name="keywords" content="CV, Resume, Personal Website">
+    <meta name="author" content="Abu Ibraheem">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body id="top">
 
-<header>
+    <!-- Header -->
 
-    <h2>Palestine Explorer</h2>
+<header class="header">
 
-  <svg width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" aria-label="Palestine flag logo">
-    <rect width="60" height="13.33" y="0" fill="#000000"></rect>
-    <rect width="60" height="13.33" y="13.33" fill="#ffffff"></rect>
-    <rect width="60" height="13.34" y="26.66" fill="#007a3d"></rect>
-    <path d="M0,0 L22,20 L0,40 Z" fill="#ce1126"></path>
-  </svg>
+    <div class="profile">
 
-    <input type="checkbox" id="menu">
-    <label for="menu" class="hamburger">☰</label>
+        <div class="logo-container">
 
-    <nav>
+            <svg width="80" height="80">
+
+                <circle cx="40" cy="40" r="35"
+                    fill="#1E90FF"
+                    stroke="black"
+                    stroke-width="2"/>
+
+                <text x="40"
+                    y="50"
+                    text-anchor="middle"
+                    font-size="24"
+                    fill="white"
+                    font-family="Arial">
+                    SI
+                </text>
+
+            </svg>
+
+        </div>
+
+
+        <div class="profile-info">
+
+            <h1>Saleh Ibrahim</h1>
+
+            <p>Information Technology Student</p>
+
+            <p class="bio">
+                Information Technology student interested in web development,
+                programming and creating modern websites.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <button id="menuButton">☰</button>
+
+
+    <nav id="menu">
+
         <a href="#top">Top</a>
-        <a href="#intro">Introduction</a>
-        <a href="#places">Governorates</a>
         <a href="#contact">Contact</a>
-        <a href="#bottom">Bottom</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+
     </nav>
 
 </header>
 
 
 
-<main>
 
-<section id="intro">
+    <!-- CV Sections -->
 
-    <h1>Palestine Explorer: Midterm Challenge</h1>
-
-    <p>
-    Palestine is a historic land located in the heart of the Middle East 
-    known for its deep-rooted history that goes back thousands of years. 
-    It is home to many old cities villages and cultural landmarks that 
-    reflect a rich and diverse heritage.
-    </p>
-
-     <p>
-    Cities such as Nablus Bethlehem Jenin Jericho Tulkarm and Gaza 
-    each carry their own unique character from ancient markets and 
-    religious sites to fertile farmlands and coastal views. Palestine is 
-    also known for its warm hospitality traditional food and vibrant 
-    local culture that has been passed down through generations.
-    </p>
-
-    <p>
-    This website aims to introduce you to some of the most important 
-    Palestinian governorates, giving a glimpse into their history 
-    geography and what makes each one special.
-    </p>
-
-    <a href="#places">See Places</a>
-
-</section>
+    <main class="cv-container">
 
 
-<section id="places">
+        <!-- Personal Information -->
 
-    <h2>Palestinian Governorates</h2>
+        <section class="cv-section">
 
-    <div class="cards">
+            <h2>Personal Information</h2>
 
+            <p><b>Name:</b> Saleh Ibrahim</p>
 
-        <article>
-            <img src="imges/nablus.jpg" alt="Nablus city">
-            <h3>Nablus</h3>
-            <p>
-      Nablus is a historic city known for its old markets traditional buildings and local food.
-            </p>
-        </article>
+            <p><b>Major:</b> Information Technology</p>
+
+        </section>
 
 
-        <article>
-            <img src="imges/Bethlehem.webp" alt="Bethlehem city">
-            <h3>Bethlehem</h3>
-            <p>
-          Bethlehem is a historic city known for its important religious sites,
-            old buildings traditional markets and rich history.
-            </p>
-        </article>
+        <!-- Contact -->
+
+        <section class="cv-section" id="contact">
+
+            <h2>Contact</h2>
+
+            <p><b>Phone:</b>(+66) 621201151</p>
+
+            <p><b>Email:</b>basharahilsalee@gmail.com</p>
+
+            <p><b>Location:</b> Jeddah, Saudi Arabia</p>
+
+            <p><b>GitHub:</b> https://github.com/yourusername</p>
+
+        </section>
 
 
-        <article>
-            <img src="imges/sLXZm.jpg" alt="Jenin city">
-            <h3>Jenin</h3>
-               <p>
-              Jenin is a city in northern Palestine known for its green areas
-              farms agriculture and beautiful natural surroundings.
-               </p>
-        </article>
+        <!-- Education -->
+
+        <section class="cv-section">
+
+            <h2>Education</h2>
+
+            <p><b>Major:</b> Information Technology</p>
+
+            <p><b>Graduation:</b> 2024</p>
+
+        </section>
 
 
-        <article>
-            <img src="imges/Jericho-11345.jpg" alt="Jericho city">
-            <h3>Jericho</h3>
-            <p>
-                Jericho is one of the oldest cities in the world It is known for
-                its ancient history warm climate and important historical places.
-            </p>
-        </article>
+        <!-- Programming Languages -->
+
+        <section class="cv-section">
+
+            <h2>Programming Languages</h2>
+
+            <ul class="list">
+
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+
+            </ul>
+
+        </section>
 
 
-        <article>
-            <img src="imges/sdasadasd2-1725179409.webp" alt="Tulkarm city">
-            <h3>Tulkarm</h3>
-            <p>
-            Tulkarm is a city in northern Palestine known for its farms
-            agriculture traditional markets and local culture.
-            </p>
-        </article>
+        <!-- Languages -->
+
+        <section class="cv-section">
+
+            <h2>Languages I Speak</h2>
+
+            <ul class="list">
+
+                <li>Arabic</li>
+                <li>English</li>
+
+            </ul>
+
+        </section>
 
 
-        <article>
-            <img src="imges/Gaza_City.jpg" alt="Gaza city">
-            <h3>Gaza</h3>
-            <p>
-            Gaza is a coastal city known for its location near the Mediterranean Sea
-            long history local markets and traditional culture.
-            </p>
-        </article>
+        <!-- Certificates -->
+
+        <section class="cv-section">
+
+            <h2>Certificates</h2>
+
+            <ul class="list">
+
+                <li>English Certificate - Level 5</li>
+                <li>First Aid Certificate</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- Skills -->
+
+        <section class="cv-section" id="skills">
+
+            <h2>Skills</h2>
+
+            <ul class="list">
+
+                <li>Time Management</li>
+                <li>Problem Solving</li>
+                <li>Teamwork</li>
+                <li>Working Under Pressure</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- Activities -->
+
+        <section class="cv-section">
+
+            <h2>Activities</h2>
+
+            <ul class="list">
+
+                <li>University Workshops</li>
+                <li>Team Projects</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- Projects -->
+
+        <section class="cv-section" id="projects">
+
+            <h2>Projects</h2>
+
+            <ul class="list">
+
+                <li>TastyGo - Online Food Ordering Website</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- Contact Form -->
+
+        <section class="cv-section contact-form">
+
+            <h2>Contact Me</h2>
+
+            <form id="contactForm">
+
+                <label>Name:</label>
+
+                <input type="text" name="name" required pattern="[A-Za-z ]+" placeholder="Enter your name">
+
+
+                <label>Email:</label>
+
+                <input type="email" name="email" required placeholder="Enter your email">
+
+
+                <label>Phone:</label>
+
+                <input type="tel" name="phone" required pattern="[0-9]{10}" placeholder="Enter 10 digit phone number">
+
+
+                <label>Message:</label>
+
+                <textarea name="message" required placeholder="Write your message"></textarea>
+
+
+                <button type="submit">Send</button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Carousel -->
+
+<section class="cv-section carousel-section">
+
+    <h2>My Projects</h2>
+
+    <div class="carousel">
+
+        <img id="carouselImage"
+             src="image1.jpg"
+             alt="Project image">
+
+        <div class="carousel-buttons">
+
+            <button id="previousButton">
+                Previous
+            </button>
+
+            <button id="nextButton">
+                Next
+            </button>
+
+        </div>
 
     </div>
 
 </section>
 
-<section id="contact">
 
-    <h2>Contact Us</h2>
+        <!-- Visitors -->
 
-    <form>
+        <section class="cv-section visitors">
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" required>
+            <h2>Website Visitors</h2>
 
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" required>
+            <p>
+                Number of Visitors:
+                <span id="visitorCount">0</span>
+            </p>
 
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email"
-        pattern="[a-zA-Z0-9._%+-]+@ftu\.ac\.th"
-        required>
-
-        <label for="secret">Secret Word:</label>
-        <input type="password" id="secret"
-        minlength="8"
-        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}"
-        required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" required></textarea>
-
-        <button type="submit">Submit</button>
-
-    </form>
-
-</section>
+        </section>
 
 
-<footer id="bottom">
+    </main>
 
-    <p>© 2026 Palestine Explorer - Saleh Ibrahim</p>
 
-    <a href="#top">Back to Top</a>
+    <!-- Go To Top -->
 
-</footer>
+    <button id="topButton">↑ Top</button>
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <p>© 2026 Saleh Ibrahim. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
