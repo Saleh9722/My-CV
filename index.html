@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <title>My CV</title>
 
@@ -9,15 +9,31 @@
     <meta name="author" content="Abu Ibraheem" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { brand: "#1e90ff" },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      html { scroll-behavior: smooth; }
+    </style>
   </head>
 
-  <body id="top">
+  <body id="top" class="m-0 bg-neutral-100 font-sans text-[#222]">
     <!-- Header -->
 
-    <header class="header">
-      <div class="profile">
-        <div class="logo-container">
+    <header
+      class="flex flex-col items-center justify-between gap-2.5 border-b border-gray-300 bg-white px-[30px] py-[15px] text-center md:flex-row md:text-left"
+    >
+      <div class="flex flex-col items-center gap-4 md:flex-row">
+        <div class="flex items-center">
           <svg width="80" height="80">
             <circle
               cx="40"
@@ -41,35 +57,43 @@
           </svg>
         </div>
 
-        <div class="profile-info">
-          <h1>Saleh Ibrahim</h1>
+        <div>
+          <h1 class="text-3xl font-bold text-brand">Saleh Ibrahim</h1>
 
-          <p>Information Technology Student</p>
+          <p class="my-1">Information Technology Student</p>
 
-          <p class="bio">
+          <p class="my-1 max-w-[500px] text-sm leading-snug">
             Information Technology student interested in web development,
             programming and creating modern websites.
           </p>
         </div>
       </div>
 
-      <button id="menuButton">☰</button>
+      <button
+        id="menuButton"
+        class="cursor-pointer rounded border border-gray-400 bg-gray-100 px-3 py-1.5 hover:bg-gray-200"
+      >
+        ☰
+      </button>
 
-      <nav id="menu">
-        <a href="#top">Top</a>
-        <a href="#contact">Contact</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
+      <!-- script.js sets style.display = "flex" / "none" on this element -->
+      <nav id="menu" class="hidden flex-col items-center gap-5 md:flex-row">
+        <a href="#top" class="text-brand no-underline">Top</a>
+        <a href="#contact" class="text-brand no-underline">Contact</a>
+        <a href="#skills" class="text-brand no-underline">Skills</a>
+        <a href="#projects" class="text-brand no-underline">Projects</a>
       </nav>
     </header>
 
     <!-- CV Sections -->
 
-    <main class="cv-container">
+    <main
+      class="mx-auto grid max-w-[1000px] grid-cols-1 gap-4 p-5 md:grid-cols-2"
+    >
       <!-- Personal Information -->
 
-      <section class="cv-section">
-        <h2>Personal Information</h2>
+      <section class="space-y-2 rounded border border-gray-300 bg-white p-5">
+        <h2 class="text-2xl font-bold text-brand">Personal Information</h2>
 
         <p><b>Name:</b> Saleh Ibrahim</p>
 
@@ -78,12 +102,15 @@
 
       <!-- Contact -->
 
-      <section class="cv-section" id="contact">
-        <h2>Contact</h2>
+      <section
+        id="contact"
+        class="space-y-2 rounded border border-gray-300 bg-white p-5"
+      >
+        <h2 class="text-2xl font-bold text-brand">Contact</h2>
 
-        <p><b>Phone:</b>(+66) 621201151</p>
+        <p><b>Phone:</b> (+66) 621201151</p>
 
-        <p><b>Email:</b>basharahilsalee@gmail.com</p>
+        <p><b>Email:</b> basharahilsalee@gmail.com</p>
 
         <p><b>Location:</b> Jeddah, Saudi Arabia</p>
 
@@ -92,8 +119,8 @@
 
       <!-- Education -->
 
-      <section class="cv-section">
-        <h2>Education</h2>
+      <section class="space-y-2 rounded border border-gray-300 bg-white p-5">
+        <h2 class="text-2xl font-bold text-brand">Education</h2>
 
         <p><b>Major:</b> Information Technology</p>
 
@@ -102,10 +129,10 @@
 
       <!-- Programming Languages -->
 
-      <section class="cv-section">
-        <h2>Programming Languages</h2>
+      <section class="space-y-2 rounded border border-gray-300 bg-white p-5">
+        <h2 class="text-2xl font-bold text-brand">Programming Languages</h2>
 
-        <ul class="list">
+        <ul class="flex list-inside list-disc flex-wrap gap-5">
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
@@ -115,10 +142,10 @@
 
       <!-- Languages -->
 
-      <section class="cv-section">
-        <h2>Languages I Speak</h2>
+      <section class="space-y-2 rounded border border-gray-300 bg-white p-5">
+        <h2 class="text-2xl font-bold text-brand">Languages I Speak</h2>
 
-        <ul class="list">
+        <ul class="flex list-inside list-disc flex-wrap gap-5">
           <li>Arabic</li>
           <li>English</li>
         </ul>
@@ -126,10 +153,10 @@
 
       <!-- Certificates -->
 
-      <section class="cv-section">
-        <h2>Certificates</h2>
+      <section class="space-y-2 rounded border border-gray-300 bg-white p-5">
+        <h2 class="text-2xl font-bold text-brand">Certificates</h2>
 
-        <ul class="list">
+        <ul class="flex list-inside list-disc flex-wrap gap-5">
           <li>English Certificate - Level 5</li>
           <li>First Aid Certificate</li>
         </ul>
@@ -137,10 +164,13 @@
 
       <!-- Skills -->
 
-      <section class="cv-section" id="skills">
-        <h2>Skills</h2>
+      <section
+        id="skills"
+        class="space-y-2 rounded border border-gray-300 bg-white p-5"
+      >
+        <h2 class="text-2xl font-bold text-brand">Skills</h2>
 
-        <ul class="list">
+        <ul class="flex list-inside list-disc flex-wrap gap-5">
           <li>Time Management</li>
           <li>Problem Solving</li>
           <li>Teamwork</li>
@@ -150,10 +180,10 @@
 
       <!-- Activities -->
 
-      <section class="cv-section">
-        <h2>Activities</h2>
+      <section class="space-y-2 rounded border border-gray-300 bg-white p-5">
+        <h2 class="text-2xl font-bold text-brand">Activities</h2>
 
-        <ul class="list">
+        <ul class="flex list-inside list-disc flex-wrap gap-5">
           <li>University Workshops</li>
           <li>Team Projects</li>
         </ul>
@@ -161,20 +191,23 @@
 
       <!-- Projects -->
 
-      <section class="cv-section" id="projects">
-        <h2>Projects</h2>
+      <section
+        id="projects"
+        class="space-y-2 rounded border border-gray-300 bg-white p-5"
+      >
+        <h2 class="text-2xl font-bold text-brand">Projects</h2>
 
-        <ul class="list">
+        <ul class="flex list-inside list-disc flex-wrap gap-5">
           <li>TastyGo - Online Food Ordering Website</li>
         </ul>
       </section>
 
       <!-- Contact Form -->
 
-      <section class="cv-section contact-form">
-        <h2>Contact Me</h2>
+      <section class="rounded border border-gray-300 bg-white p-5 md:col-span-2">
+        <h2 class="mb-2 text-2xl font-bold text-brand">Contact Me</h2>
 
-        <form id="contactForm">
+        <form id="contactForm" class="flex flex-col gap-2">
           <label>Name:</label>
 
           <input
@@ -183,6 +216,7 @@
             required
             pattern="[A-Za-z ]+"
             placeholder="Enter your name"
+            class="border border-gray-300 p-2.5 focus:border-brand focus:outline-none"
           />
 
           <label>Email:</label>
@@ -192,6 +226,7 @@
             name="email"
             required
             placeholder="Enter your email"
+            class="border border-gray-300 p-2.5 focus:border-brand focus:outline-none"
           />
 
           <label>Phone:</label>
@@ -202,6 +237,7 @@
             required
             pattern="[0-9]{10}"
             placeholder="Enter 10 digit phone number"
+            class="border border-gray-300 p-2.5 focus:border-brand focus:outline-none"
           />
 
           <label>Message:</label>
@@ -210,41 +246,71 @@
             name="message"
             required
             placeholder="Write your message"
+            class="h-[100px] border border-gray-300 p-2.5 focus:border-brand focus:outline-none"
           ></textarea>
 
-          <button type="submit">Send</button>
+          <button
+            type="submit"
+            class="cursor-pointer border-none bg-brand p-2.5 text-white hover:opacity-90"
+          >
+            Send
+          </button>
         </form>
       </section>
 
       <!-- Carousel -->
 
-      <section class="cv-section carousel-section">
-        <h2>My Projects</h2>
+      <section
+        class="rounded border border-gray-300 bg-white p-5 text-center md:col-span-2"
+      >
+        <h2 class="mb-3 text-2xl font-bold text-brand">My Projects</h2>
 
-        <div class="carousel">
-          <img id="carouselImage" src="image1.jpg" alt="Project image" />
+        <div>
+          <img
+            id="carouselImage"
+            src="image1.jpg"
+            alt="Project image"
+            class="mx-auto h-[280px] w-[500px] max-w-full border border-gray-300 bg-neutral-200 object-contain"
+          />
 
-          <div class="carousel-buttons">
-            <button id="previousButton">Previous</button>
+          <div class="mt-3 flex justify-center gap-2.5">
+            <button
+              id="previousButton"
+              class="cursor-pointer rounded border border-gray-400 bg-gray-100 px-4 py-2 hover:bg-gray-200"
+            >
+              Previous
+            </button>
 
-            <button id="nextButton">Next</button>
+            <button
+              id="nextButton"
+              class="cursor-pointer rounded border border-gray-400 bg-gray-100 px-4 py-2 hover:bg-gray-200"
+            >
+              Next
+            </button>
           </div>
         </div>
       </section>
+
       <!-- Clock (FetchAPI) -->
 
-      <section class="cv-section clock-section">
-        <h2>O'clock</h2>
+      <section
+        class="space-y-1 rounded border border-gray-300 bg-white p-5 text-center md:col-span-2"
+      >
+        <h2 class="mb-3 text-2xl font-bold text-brand">O'clock</h2>
 
-        <p id="clockCity">Loading...</p>
-        <p id="clockTime">--:--:--</p>
-        <p id="clockDate"></p>
+        <p id="clockCity" class="text-lg">Loading...</p>
+        <p id="clockTime" class="text-4xl font-bold tabular-nums text-brand">
+          --:--:--
+        </p>
+        <p id="clockDate" class="text-sm text-gray-500"></p>
       </section>
 
       <!-- Visitors -->
 
-      <section class="cv-section visitors">
-        <h2>Website Visitors</h2>
+      <section
+        class="rounded border border-gray-300 bg-white p-5 text-center md:col-span-2"
+      >
+        <h2 class="mb-3 text-2xl font-bold text-brand">Website Visitors</h2>
 
         <p>
           Number of Visitors:
@@ -255,11 +321,16 @@
 
     <!-- Go To Top -->
 
-    <button id="topButton">↑ Top</button>
+    <button
+      id="topButton"
+      class="fixed bottom-5 right-5 cursor-pointer border-none bg-brand px-4 py-2.5 text-white hover:opacity-90"
+    >
+      ↑ Top
+    </button>
 
     <!-- Footer -->
 
-    <footer class="footer">
+    <footer class="mt-2.5 bg-white p-4 text-center">
       <p>© 2026 Saleh Ibrahim. All Rights Reserved.</p>
     </footer>
 
